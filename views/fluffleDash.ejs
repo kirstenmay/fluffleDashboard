@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Fluffle Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="/bunny/new">+Fluffle Member</a>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card w-75">
+                <div class="text-center">
+                    <h1>Welcome to Fluffle Dashboard</h1>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <% for(var bunny of bun) { %>
+                            <li class="list-group-item">
+                                <a href="/bunny/<%= bunny.id %>">
+                                    <%= bunny.name %>
+                                </a> -
+                                <%= bunny.created_at %>
+                                    <a href="/destroy/<%= bunny.id %>" class="btn btn-sm btn-outline-danger" id="space">Delete</a>
+                            </li>
+                            <% } %>
+                    </ul>
+                    <div class="text-center">
+                        <small>The hub for the cutest fluffy bunny tails</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Fluffle Member Info</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="/">Fluffle Dashboard</a>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card w-50">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h5 class="card-title">
+                            <%= bunny.name %>
+                        </h5>
+                        <img src="/img/bunny.jpg" alt="bunny" class="smallImg">
+                    </div>
+                    <p class="card-text">Bunny Color:
+                        <%= bunny.color %>
+                    </p>
+                    <p class="card-text">Bunny Home:
+                        <%= bunny.home %>
+                    </p>
+                    <div class="text-center">
+                        <a href="/bunny/edit/<%= bunny.id %>" class="btn btn-outline-dark">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

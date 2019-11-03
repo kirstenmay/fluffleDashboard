@@ -1,0 +1,44 @@
+body {
+    background-image: url('/img/flower.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav {
+    background-color: #ffffff9c;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 80;
+    margin: 15px 0;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #ffffff9c;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.list-group-item {
+    background-color: #a190902f;
+}
+
+.smallImg {
+    height: 250px;
+    width: 400px;
+    margin: 20px 0;
+}
+
+span {
+    color: red;
+}
